@@ -1,18 +1,4 @@
-//function kilometerToMeter(kilometer){
-//    var meter = kilometer*1000;
-//    return meter;
-//}
-//var meter = kilometerToMeter(8);
-//console.log(meter);
-//
-//
-//function budgetCalculator(watch){
-//    var result = 
-//    var phone = 100;
-//    var laptop = 500;
-//
-//}
-var day = 32;
+function hotelCost(day32){
 var amount = 0;
 if (day <=10){
     amount = day*100;
@@ -30,4 +16,7 @@ else{
     var goldenRate = remainingDay * 50;
     amount = day10 + discoutnRate +goldenRate;
 }
-console.log(amount);
+ return amount;
+}
+var count = hotelCost(32);
+console.log(count);
