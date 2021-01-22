@@ -12,7 +12,7 @@
 //    var laptop = 500;
 //
 //}
-var day = 32;
+var day = 71;
 var amount = 0;
 if (day <=10){
     amount = day*100;

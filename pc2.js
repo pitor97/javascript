@@ -1,22 +1,14 @@
-function hotelCost(day32){
-var amount = 0;
-if (day <=10){
-    amount = day*100;
+var friendsNname = [ "uzzol", "sumi", "jhankar", "roky", "mathasagor", "jamal", "sadhon"];
+
+function megaFriend(arr) {
+  var longName = arr[0];
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i].length > longName.length) {
+      longName = arr[i];
+    }
+  }
+  return longName;
 }
-else if(day <=20){
-    var day10 = 10*100;
-    var remainingDay = day-10;
-    var discoutnRate = remainingDay*80;
-    amount = day10 + discoutnRate;
-}
-else{
-    var day10 = 10*100;
-    var discoutnRate = 10*80;
-    var remainingDay = day - 20;
-    var goldenRate = remainingDay * 50;
-    amount = day10 + discoutnRate +goldenRate;
-}
- return amount;
-}
-var count = hotelCost(32);
-console.log(count);
+
+
+console.log(megaFriend(friendsNname));
