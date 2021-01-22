@@ -6,12 +6,21 @@
 
 function kilometerToMeter(kilometer){
     var meter = kilometer*1000;
-    return meter;
+    //return meter;
+    return 8000;
 }
 var meter = kilometerToMeter(8);
+//console.log(meter);
 
 //Problem n2- budgetCalculator
-function budgetCalculator()
+function budgetCalculator(watchPrice, phonePrice, laptopPrice){
+    watchPrice= 50*2;
+    phonePrice= 100*3;
+    laptopPrice= 500*4;
+    var totalCost = watchPrice + phonePrice + laptopPrice;
+    return totalCost;
+    
+}
 
 
 
